@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Orçamento Freelancer TI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Simulador de Orçamento Freelancer TI</h1>
+
+        <div class="servicos">
+
+            <div class="servico">
+                <label>
+                    <input type="checkbox" value="1200" onchange="calcularTotal()">
+                    Landing Page - R$ 1200
+                </label>
+            </div>
+
+            <div class="servico">
+                <label>
+                    <input type="checkbox" value="2500" onchange="calcularTotal()">
+                    Site Institucional - R$ 2500
+                </label>
+            </div>
+
+            <div class="servico">
+                <label>
+                    <input type="checkbox" value="300" onchange="calcularTotal()">
+                    Hospedagem - R$ 300
+                </label>
+            </div>
+
+            <div class="servico">
+                <label>
+                    <input type="checkbox" value="1000" onchange="calcularTotal()">
+                    Banco de Dados - R$ 1000
+                </label>
+            </div>
+
+            <div class="servico">
+                <label>
+                    <input type="checkbox" value="1500" onchange="calcularTotal()">
+                    Integração API - R$ 1500
+                </label>
+            </div>
+
+            <div class="servico">
+                <label>
+                    <input type="checkbox" value="400" onchange="calcularTotal()">
+                    Manutenção Mensal - R$ 400
+                </label>
+            </div>
+
+        </div>
+
+        <div class="total">
+            Total: R$ <span id="total">0</span>
+        </div>
+        
+        <button class="botao">Gerar Orçamento</button>
+        
+        </div>
+        
+    <script src="script.js"></script>
+
+</body>
+
+</html>
